@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header style */
+#header {
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 100px;
+}
+#logoimg {
+  height: 80px;
+}
+/* Search bar */
+#search {
+  font-size: 17px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: rgb(246, 246, 248);
+  width: fit-content;
+  width: 500px;
+  padding: 13px;
+}
+/* signin,community,storeservices */
+/* signin dropdown */
+#signinDropDown {
+  position: relative;
+  display: inline-block;
+}
+#signinLogoInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#signinLogoInfo > img {
+  width: 45px;
+}
+#signinLogoInfo > div {
+  text-align: left;
+}
+#SigninDropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+  padding: 12px 16px;
+  z-index: 1;
+  margin-left: -100px;
+  text-align: center;
+}
+#signinDropDown:hover #SigninDropDownContent {
+  display: block;
+}
+#SigninCreateAccountBtn button {
+  width: 150px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10px;
+}
+#signinbtn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#createaccountbtn {
+  background-color: white;
+  cursor: pointer;
+}
+#signin,
+#storesservices,
+#community {
+  display: flex;
+  align-items: center;
+}
+#signin div,
+#storesservices div,
+#community div {
+  padding: 5px;
+}
+/* header images */
+#signin > img {
+  height: 37px;
+}
+#storesservices > img {
+  height: 46px;
+}
+#community > img {
+  height: 30px;
+}
+#chat {
+  height: 33px;
+}
+#basket {
+  height: 38px;
+}
+/* font styles */
+.font14px {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.font11px {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#signinfont {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* header cursor */
+#signin,
+#storesservices,
+#community,
+#chat,
+#basket:hover {
+  cursor: pointer;
+}
+#signin div:hover,
+#storesservices div:hover,
+#community div:hover,
+#chat:hover,
+#basket:hover {
+  border-bottom: 3px solid black;
+}
+/* navigation bar style */
+#navbar {
+  padding: 15px 120px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  height: 25px;
+  align-items: center;
+}
+#navbar > h5:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+#makeupContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+#filter {
+  width: 30%;
+  border: 1px solid;
+}
+#filterbyicons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+#filterbyicons > div {
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#displayproducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+#displayproducts img{
+    width: 100%;
+}
+#displayproducts h5,p,h4{
+    margin-bottom:8px ;
+}
