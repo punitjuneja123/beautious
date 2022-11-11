@@ -25,6 +25,51 @@
   padding: 13px;
 }
 /* signin,community,storeservices */
+/* signin dropdown */
+#signinDropDown {
+  position: relative;
+  display: inline-block;
+}
+#signinLogoInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#signinLogoInfo > img {
+  width: 45px;
+}
+#signinLogoInfo > div {
+  text-align: left;
+}
+#SigninDropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+  padding: 12px 16px;
+  z-index: 1;
+  margin-left: -100px;
+  text-align: center;
+}
+#signinDropDown:hover #SigninDropDownContent {
+  display: block;
+}
+#SigninCreateAccountBtn button {
+  width: 150px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10px;
+}
+#signinbtn {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#createaccountbtn {
+  background-color: white;
+  cursor: pointer;
+}
 #signin,
 #storesservices,
 #community {
@@ -91,6 +136,12 @@
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
+  height: 25px;
+  align-items: center;
+}
+#navbar>h5:hover{
+  cursor: pointer;
+  border-bottom: 2px solid white;
 }
 /* manual image slider */
 #imgslider {
@@ -137,7 +188,11 @@ h4 {
   margin-left: 25px;
   font-size: 14px;
 }
-/* xliding buttons */
+#imgslider > div:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* top section sliding buttons */
 #slideRight {
   height: 40px;
   position: absolute;
@@ -165,39 +220,49 @@ h4 {
 #slideLeft:hover {
   cursor: pointer;
 }
-/* Mid Section */
-/* choiceforyou */
+/*                Mid Section               */
+/* choiceforyou,just Dropped */
 #choiceforyou,
-#justdropped {
+#justdropped,
+#beautyoffer,
+#sellingfast {
   width: 80%;
   margin: auto;
 }
 #choiceheading,
-#justdroppedheading {
+#justdroppedheading,
+#beautyofferheading,
+#sellingfastheading {
   margin-top: 50px;
 }
 #choiceforyou > div,
-#justdropped > div {
+#justdropped > div,
+#beautyoffer > div,
+#sellingfast > div {
   display: flex;
-
   margin-top: 20px;
   gap: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 5px;
-  align-items: center;
 }
 #choiceforyou > div > div,
-#justdropped > div > div {
+#justdropped > div > div,
+#beautyoffer > div > div,
+#sellingfast > div > div {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 8px;
+  cursor: pointer;
 }
 #choiceforyou > div > div > img,
-#justdropped > div > div > img {
+#justdropped > div > div > img,
+#sellingfast > div > div > img {
   width: 177px;
 }
 #ChoiceSlideLeft,
-#justdroppedSlideLeft {
+#justdroppedSlideLeft,
+#beautyofferSlideLeft,
+#sellingfastSlideLeft {
   height: 40px;
   position: absolute;
   background-color: black;
@@ -206,18 +271,121 @@ h4 {
   width: 60px;
   border-radius: 50%;
   opacity: 0.7;
-  left: 120px;
+  left: 123px;
+  align-self: center;
 }
 #choiceSlideRight,
-#justdroppedSlideRight {
+#justdroppedSlideRight,
+#beautyofferSlideRight,
+#sellingfastSlideRight {
   height: 40px;
   position: absolute;
   background-color: black;
   color: white;
-  right: 120px;
+  right: 110px;
   margin-right: 10px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   opacity: 0.7;
+  align-self: center;
+}
+.marginleft15 {
+  margin-left: 15px;
+}
+/* offer casrd */
+#offercard {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+#offercard > img {
+  width: 32%;
+  border-radius: 5px;
+}
+/*     buttom section     */
+#buttomsection {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-top: 80px;
+}
+#btmbtnsection {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+#btmbtnsection > div {
+  display: flex;
+  align-items: center;
+}
+#btmbtnsection img {
+  height: 80%;
+}
+hr {
+  margin: auto;
+  margin-top: 42px;
+  width: 90%;
+}
+#btmmidsection {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  margin-top: 30px;
+}
+#btmmidsection p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+#btmmidsection h5 {
+  font-size: 14px;
+}
+#btmmidsection > div > div {
+  display: flex;
+}
+#btmmidsection > div > div > img {
+  width: 25px;
+  margin: 8px;
+  margin-left: 0px;
+}
+#newsletterdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newsletterdiv form {
+  margin: 20px;
+}
+#newsletterdiv form > input {
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 10px;
+  width: 300px;
+}
+#newsletterdiv form > button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+#btmbtmsection {
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#btmbtmsection p {
+  font-size: 13px;
+  margin: 10px;
+}
+#socialicons > img {
+  width: 35px;
 }
