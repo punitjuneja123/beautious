@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Beautious</title>
+    <link rel="stylesheet" href="headernavbar.css" />
     <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="loginmodal.css">
   </head>
   <body>
     <div id="container">
@@ -29,7 +32,7 @@
         <!-- community logo -->
         <div id="community">
           <img
-            src="http://cdn.onlinewebfonts.com/svg/img_545222.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7yo4FDz6gE2c_jOtT1OHsthZ8thEds200g&usqp=CAU"
             alt="logo"
           />
           <div>
@@ -45,24 +48,83 @@
             />
             <div>
               <p id="signinfont">Sign In🔴</p>
-              <p class="font11px">For free Shipping🚚</p>
+              <p id="logout" class="font11px">For free Shipping🚚</p>
             </div>
           </div>
           <div id="SigninDropDownContent">
             <div id="signinLogoInfo">
-              <img src="https://www.sephora.com/img/ufe/icons/me-active.svg" alt="">
+              <img
+                src="https://www.sephora.com/img/ufe/icons/me-active.svg"
+                alt=""
+              />
               <div>
                 <p>Hello, Beautiful.</p>
-                <p style="font-size: 11px;">Sign in for FREE standard shipping on all orders.</p>
+                <p style="font-size: 11px">
+                  Sign in for FREE standard shipping on all orders.
+                </p>
               </div>
             </div>
             <div id="SigninCreateAccountBtn">
               <button id="signinbtn">Sign In</button>
+
               <button id="createaccountbtn">Create Account</button>
             </div>
           </div>
         </div>
-
+        <!-- ..................signin modal..................... -->
+        <div id="signinModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="signinclose">&times;</span>
+            <h4>Sign In</h4>
+            <hr />
+            <form id="signinform" action="">
+              <input
+                id="signinemail"
+                type="mail"
+                placeholder="Email Address"
+              /><br />
+              <input
+                id="signinpassword"
+                type="password"
+                placeholder="Password"
+              /><br />
+              <input type="submit" value="Join Now" />
+            </form>
+          </div>
+        </div>
+        <!-- ..............Create acount Modal................. -->
+        <div id="createacountModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="createacountclose">&times;</span>
+            <h4>Create an Account</h4>
+            <hr />
+            <form id="createaccountform" action="">
+              <input
+                id="createacountname"
+                type="text"
+                placeholder="Full Name"
+              /><br />
+              <input
+                id="createacountemail"
+                type="email"
+                placeholder="Email Address"
+              /><br />
+              <input
+                id="createacountpassword"
+                type="password"
+                placeholder="Password"
+              /><br />
+              <input
+                id="createacountphone"
+                type="number"
+                placeholder="Phone Number(optional)"
+              /><br />
+              <input type="submit" value="Join Now" />
+            </form>
+          </div>
+        </div>
         <!-- chat Icon -->
         <img
           id="chat"
@@ -70,17 +132,23 @@
           alt=""
         />
         <!-- basket/add to cart icon -->
-        <img
-          id="basket"
-          src="https://icons.iconarchive.com/icons/iconsmind/outline/48/Full-Basket-icon.png"
-          alt=""
-        />
+
+        <a href="basket.html"
+          ><img
+            id="basket"
+            src="https://icons.iconarchive.com/icons/iconsmind/outline/48/Full-Basket-icon.png"
+            alt=""
+        /></a>
       </div>
       <!-- Navigation bar -->
       <div id="navbar">
         <h5>News</h5>
         <h5>Brand</h5>
-        <h5><a href="makeupPage.html" style="text-decoration: none; color:white;">Makeup</a></h5>
+        <h5>
+          <a href="makeupPage.html" style="text-decoration: none; color: white"
+            >Makeup</a
+          >
+        </h5>
         <h5>Skincare</h5>
         <h5>Hair</h5>
         <h5>Fragrance</h5>
@@ -203,7 +271,7 @@
               alt=""
             />
             <h5>PATRICK TA</h5>
-            <p>Major Beauty Headlines - Double-Take Crème & </p>
+            <p>Major Beauty Headlines - Double-Take Crème &</p>
           </div>
           <div>
             <img
@@ -252,7 +320,7 @@
               alt=""
             />
             <h5>Laura Mercier</h5>
-            <p>Flawless Encounter Translucent Loose Setting </p>
+            <p>Flawless Encounter Translucent Loose Setting</p>
           </div>
           <div>
             <img
@@ -284,7 +352,7 @@
               alt=""
             />
             <h5>Charlotte Tilbury</h5>
-            <p>Pillow Talk Beautifying Blush and Highlighter </p>
+            <p>Pillow Talk Beautifying Blush and Highlighter</p>
           </div>
           <div>
             <img
@@ -308,7 +376,7 @@
               alt=""
             />
             <h5>ONE/SIZE by Patrick Starrr</h5>
-            <p>On 'Til Dawn Mattifying Waterproof Setting Spray </p>
+            <p>On 'Til Dawn Mattifying Waterproof Setting Spray</p>
           </div>
           <div>
             <img
@@ -755,7 +823,7 @@
               <h1>We Belong to Something Beautiful</h1>
             </div>
             <form>
-              <label>Sign up for Sephora Emails</label><br />
+              <label>Sign up for Beautious Emails</label><br />
               <input type="text" placeholder="Enteryour Email Address" />
               <button id="newsbutton">Sign Up</button>
             </form>
@@ -934,4 +1002,4 @@
     sellingfastHideButton(button5count);
   });
 </script>
-<script src="homepage.js"></script>
+<script src="createLoginAccount.js"></script>

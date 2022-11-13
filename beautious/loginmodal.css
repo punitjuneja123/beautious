@@ -1,0 +1,68 @@
+/* Create and signin Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 30%;
+}
+.modal-content>hr{
+  margin-top: -10px;
+}
+/* Close Button */
+.createacountclose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.signinclose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.createacountclose:hover,
+.createacountclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.signinclose:hover,
+.signinclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* modal content/form style */
+.modal-content>form{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.modal-content>form>input{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+}
+.modal-content>form>input[type="submit"]{
+  width: 50%;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

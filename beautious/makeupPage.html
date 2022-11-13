@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Makeup | Beautious</title>
+    <link rel="stylesheet" href="headernavbar.css" />
     <link rel="stylesheet" href="makeupPage.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="loginmodal.css">
   </head>
   <body>
     <div id="container">
@@ -29,7 +32,7 @@
         <!-- community logo -->
         <div id="community">
           <img
-            src="http://cdn.onlinewebfonts.com/svg/img_545222.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7yo4FDz6gE2c_jOtT1OHsthZ8thEds200g&usqp=CAU"
             alt="logo"
           />
           <div>
@@ -45,7 +48,7 @@
             />
             <div>
               <p id="signinfont">Sign In🔴</p>
-              <p class="font11px">For free Shipping🚚</p>
+              <p id="logout" class="font11px">For free Shipping🚚</p>
             </div>
           </div>
           <div id="SigninDropDownContent">
@@ -63,11 +66,65 @@
             </div>
             <div id="SigninCreateAccountBtn">
               <button id="signinbtn">Sign In</button>
+
               <button id="createaccountbtn">Create Account</button>
             </div>
           </div>
         </div>
-
+        <!-- ..................signin modal..................... -->
+        <div id="signinModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="signinclose">&times;</span>
+            <h4>Sign In</h4>
+            <hr />
+            <form id="signinform" action="">
+              <input
+                id="signinemail"
+                type="mail"
+                placeholder="Email Address"
+              /><br />
+              <input
+                id="signinpassword"
+                type="password"
+                placeholder="Password"
+              /><br />
+              <input type="submit" value="Join Now" />
+            </form>
+          </div>
+        </div>
+        <!-- ..............Create acount Modal................. -->
+        <div id="createacountModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="createacountclose">&times;</span>
+            <h4>Create an Account</h4>
+            <hr />
+            <form id="createaccountform" action="">
+              <input
+                id="createacountname"
+                type="text"
+                placeholder="Full Name"
+              /><br />
+              <input
+                id="createacountemail"
+                type="email"
+                placeholder="Email Address"
+              /><br />
+              <input
+                id="createacountpassword"
+                type="password"
+                placeholder="Password"
+              /><br />
+              <input
+                id="createacountphone"
+                type="number"
+                placeholder="Phone Number(optional)"
+              /><br />
+              <input type="submit" value="Join Now" />
+            </form>
+          </div>
+        </div>
         <!-- chat Icon -->
         <img
           id="chat"
@@ -75,13 +132,15 @@
           alt=""
         />
         <!-- basket/add to cart icon -->
-        <img
-          id="basket"
-          src="https://icons.iconarchive.com/icons/iconsmind/outline/48/Full-Basket-icon.png"
-          alt=""
-        />
+
+        <a href="basket.html"
+          ><img
+            id="basket"
+            src="https://icons.iconarchive.com/icons/iconsmind/outline/48/Full-Basket-icon.png"
+            alt=""
+        /></a>
       </div>
-      <!--                Navigation bar                 -->
+      <!-- Navigation bar -->
       <div id="navbar">
         <h5>News</h5>
         <h5>Brand</h5>
@@ -162,7 +221,175 @@
           </div>
         </div>
       </div>
+      <!--               bottom sectiom                -->
+      <div id="buttomsection">
+        <div id="btmbtnsection">
+          <div>
+            <img
+              src="https://www.sephora.com/img/ufe/icons/find-store.svg"
+              alt=""
+            />
+            <div>
+              <h5>Find a Store</h5>
+              <p style="font-size: 10px">Choose Your Store</p>
+            </div>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <div>
+              <h5>Live Beauty Help</h5>
+              <p style="font-size: 10px">Chat is unavailable</p>
+            </div>
+          </div>
+          <div>
+            <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="" />
+            <div>
+              <h5>Get the App</h5>
+              <p style="font-size: 10px">Text “APP” to 36681</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.sephora.com/img/ufe/icons/sms-ko.svg"
+              alt=""
+            />
+            <div>
+              <h5>Get Sephora Text Alerts</h5>
+              <p style="font-size: 10px">Sign up Now</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg"
+              alt=""
+            />
+            <div>
+              <h5>Sephora Credit Card Program</h5>
+              <p style="font-size: 10px">
+                Want 25% off your Sephora purchase? DETAILS
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div id="btmmidsection">
+          <div>
+            <h5>About Sephora</h5>
+            <p>About Sephora</p>
+            <p>Newsroom</p>
+            <p>Careers</p>
+            <p>Sephora Social Impact</p>
+            <p>Supply Chain Transparency</p>
+            <p>Affiliates</p>
+            <p>Sephora Events</p>
+            <p>Gift Cards</p>
+            <p>Sephora Global Sites</p>
+            <p>Diversity and Inclusion</p>
+            <p>Checkout on Instagram</p>
+            <p>Sephora Accelerate</p>
+            <p>Report a Vulnerability</p>
+          </div>
+          <div>
+            <h5>My Sephora</h5>
+            <p>Beauty Insider</p>
+            <p>Sephora Credit Card</p>
+            <p>Community Profile</p>
+            <p>Order Status</p>
+            <p>Purchase History</p>
+            <p>Account Settings</p>
+            <p>Beauty Advisor Recommendationss</p>
+            <p>Beauty Offers</p>
+            <p>Quizzes & Buying Guides</p>
+            <p>Rewards Bazaar</p>
+            <p>Loves</p>
+            <p>Book a Reservation</p>
+          </div>
+          <div>
+            <h5>Help</h5>
+            <p>Customer Service</p>
+            <p>Returns & Exchanges</p>
+            <p>Delivery and Pickup Options</p>
+            <p>Shipping</p>
+            <p>Billing</p>
+            <p>International Shipments</p>
+            <p>Beauty Services FAQ</p>
+            <p>Sephora at Kohl's</p>
+            <p>Sephora Inside JCPenney</p>
+            <p>Store Locations</p>
+            <p>Online Ordering</p>
+            <p>Klarna & Afterpay</p>
+            <p>Accessibility</p>
+          </div>
+          <div>
+            <h5>Region & Language</h5>
+            <div>
+              <img src="https://www.sephora.com/img/ufe/flags/us.svg" alt="" />
+              <p>United States - English</p>
+            </div>
+            <div>
+              <img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
+              <p>Canada - English</p>
+            </div>
+            <div>
+              <img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="" />
+              <p>Canada - Français</p>
+            </div>
+          </div>
+          <div id="newsletterdiv">
+            <div>
+              <h1>We Belong to Something Beautiful</h1>
+            </div>
+            <form>
+              <label>Sign up for Sephora Emails</label><br />
+              <input type="text" placeholder="Enteryour Email Address" />
+              <button id="newsbutton">Sign Up</button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <div id="btmbtmsection">
+          <div>
+            <p>© 2022 Sephora USA, Inc. All rights reserved.</p>
+            <p>
+              Privacy &nbsp; Policy &nbsp; Terms of Use &nbsp; Accessibility
+              &nbsp;Sitemap &nbsp; Your Privacy &nbsp; Choices
+            </p>
+            <p>1-877-737-4672 &nbsp; TTY: 1-888-866-9845</p>
+          </div>
+          <div id="socialicons">
+            <img
+              src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/twitter-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/pinterest-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/snapchat-ko.svg"
+              alt=""
+            />
+            <img
+              src="https://www.sephora.com/img/ufe/icons/tiktok-ko.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
 <script src="makeupPage.js"></script>
+<script src="createLoginAccount.js"></script>

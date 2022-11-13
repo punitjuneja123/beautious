@@ -1,0 +1,179 @@
+/* font size */
+.font14px {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.font13px {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+#basketcontainer {
+  width: 65%;
+  margin: auto;
+  margin-top: 40px;
+}
+#ProductandCheckout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
+}
+#basketproduct {
+  width: 60%;
+  background-color: rgb(246, 246, 248);
+  padding: 15px;
+}
+#basketcheckout {
+  width: 37%;
+}
+/* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+/* product display div */
+#productdisplaydiv {
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+/* first div free SS */
+#freess {
+  display: flex;
+  width: 80%;
+}
+#freess > img {
+  width: 45px;
+  height: 35px;
+}
+/* second div redeem and reward(ror) */
+#rar {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  gap: 10px;
+  justify-content: space-between;
+}
+#rar > div {
+  width: 45%;
+  border: 3px solid rgb(246, 246, 248);
+  text-align: center;
+  padding: 10px;
+}
+/* ..............display basket products......................... */
+#displaybasketproducts {
+  margin-top: 20px;
+}
+#displaybasketproducts > div {
+  display: flex;
+  border: 3px solid rgb(246, 246, 248);
+  justify-content: space-between;
+  padding: 20px;
+}
+/* price div */
+#displaybasketproducts > div > div:nth-child(2) > h4 {
+  margin-top: 20px;
+}
+/* imgproductdiv */
+#displaybasketproducts > div > div:nth-child(1) {
+  display: flex;
+  gap: 10px;
+}
+#displaybasketproducts > div > div:nth-child(1) > div {
+  margin-top: 20px;
+}
+/* button and quantity div */
+#displaybasketproducts > div > div:nth-child(1) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 60px;
+}
+#displaybasketproducts
+  > div
+  > div:nth-child(1)
+  > div
+  > div
+  > button:nth-child(4) {
+  color: rgb(98, 177, 245);
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+}
+#displaybasketproducts
+  > div
+  > div:nth-child(1)
+  > div
+  > div
+  > button:nth-child(1),button:nth-child(3){
+    font-size: 15px;
+    padding: 2px;
+    width: 35px;
+    border: 0px;
+  }
+/* basket Checkout */
+#basketcheckout {
+  padding: 20px;
+  border: 3px solid rgb(246, 246, 248);
+  height: 320px;
+}
+
+#basketcheckout > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 100%;
+  position: relative;
+}
+#basketcheckout > hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#basketcheckout > div:nth-child(7) {
+  height: 60px;
+  margin-top: 20px;
+}
+#basketcheckout > div > button {
+  border: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: rgb(207, 17, 44);
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+#basketcheckout > div > button:hover{
+  background-color: rgb(255, 1, 39)
+}
+#promocode {
+  border: 3px solid rgb(246, 246, 248);
+  height: 80px;
+}
+#promocode > form {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 255px;
+}
+#promocode > form > input {
+  height: 35px;
+  box-sizing: border-box;
+}
+#promocode > form > input:nth-child(3) {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 80px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+form>p{
+    margin-bottom: 4px;
+}
