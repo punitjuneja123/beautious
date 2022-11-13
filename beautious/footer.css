@@ -1,0 +1,83 @@
+/*     buttom section     */
+#buttomsection {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-top: 80px;
+}
+#btmbtnsection {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+}
+#btmbtnsection > div {
+  display: flex;
+  align-items: center;
+}
+#btmbtnsection img {
+  height: 80%;
+}
+hr {
+  margin: auto;
+  margin-top: 42px;
+  width: 90%;
+}
+#btmmidsection {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  margin-top: 30px;
+}
+#btmmidsection p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+#btmmidsection h5 {
+  font-size: 14px;
+}
+#btmmidsection > div > div {
+  display: flex;
+}
+#btmmidsection > div > div > img {
+  width: 25px;
+  margin: 8px;
+  margin-left: 0px;
+}
+#newsletterdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#newsletterdiv form {
+  margin: 20px;
+}
+#newsletterdiv form > input {
+  margin-top: 15px;
+  font-size: 14px;
+  padding: 10px;
+  width: 300px;
+}
+#newsletterdiv form > button {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+#btmbtmsection {
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#btmbtmsection p {
+  font-size: 13px;
+  margin: 10px;
+}
+#socialicons > img {
+  width: 35px;
+}

@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="productView.css" />
+    <title>Basket | Beautious</title>
+    <link rel="stylesheet" href="headernavbar.css" />
+    <link rel="stylesheet" href="basket.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="loginmodal.css">
   </head>
   <body>
-    <!--       Header and Nav bar      -->
-    <div id="container">
+    <!--................................ Header & Navbar........................................................... -->
+    <div id="navcontainer">
       <!--                header section                 -->
       <div id="header">
         <a href="homepage.html"
@@ -160,10 +161,83 @@
         <h5>Sale & Offers</h5>
       </div>
     </div>
-    <div id="productviewcontainer">
-      <!-- product view -->
+    <div id="basketcontainer">
+      <h2>My Basket</h2>
+      <div id="ProductandCheckout">
+        <!-- .........Basket Products .................-->
+        <div id="basketproduct">
+          <!-- display total items -->
+          <h3 id="totalitems">Get it shipped</h3>
+          <div id="productdisplaydiv">
+            <div id="freess">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtuWUZNxQ6fnwvLNPAb6QTjBBlzx_5WrsJg&usqp=CAU"
+                alt=""
+              />
+              <p class="font14px">
+                Beauty Insiders enjoy <strong>FREE standard shipping</strong> on
+                order above $50. Free Returns on all purchases.*
+              </p>
+            </div>
+            <div id="rar">
+              <div>
+                <p class="font13px">Get 2 free sample(s) with every order</p>
+                <p class="font13px"><strong>SELECT YOUR SAMPLE(S)</strong></p>
+              </div>
+              <div>
+                <p class="font13px">You now have 0 Beauty Insider points</p>
+                <p class="font13px"><strong>REDEEM YOUR REWARDS</strong></p>
+              </div>
+            </div>
+            <!-- display basket products -->
+            <div id="displaybasketproducts">
+              <!-- append -->
+            </div>
+          </div>
+        </div>
+        <!-- .........Basket Checkout .................-->
+        <div id="basketcheckout">
+          <div>
+            <p>Merchandise Subtotal</p>
+            <h5 id="Mertotalprice"></h5>
+          </div>
+          <div>
+            <p>Shipping & Handling</p>
+            <h5 id="shipping"></h5>
+          </div>
+          <div>
+            <p>Estimated Tax & Other Fees</p>
+            <h5>TBD</h5>
+          </div>
+          <hr />
+          <div>
+            <h5 id="promoappliedtext"></h5>
+            <h5 id="dis10"></h5>
+          </div>
+          <div>
+            <h5>Estimated Total</h5>
+            <h4 id="shippingandtotalprice">totalprice</h4>
+          </div>
+          <div>
+            <button><h3>Checkout Shipped Items</h3></button>
+          </div>
+          <hr id="hr" />
+          <div id="promocode">
+            <form action="">
+              <p style="font-size: 10px">Use masai to get 10% off</p>
+              <input
+                id="promocode"
+                type="text"
+                placeholder="Promo or Reward Code"
+              />
+
+              <input type="submit" value="Apply" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--               bottom sectiom                -->
+    <!-- ...............................footer/bottom section...................................................... -->
     <div id="buttomsection">
       <div id="btmbtnsection">
         <div>
@@ -329,5 +403,5 @@
     </div>
   </body>
 </html>
-<script src="productView.js"></script>
+<script src="basket.js"></script>
 <script src="createLoginAccount.js"></script>

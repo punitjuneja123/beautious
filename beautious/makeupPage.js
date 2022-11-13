@@ -22,7 +22,6 @@ async function fetchData(url) {
 let display = document.querySelector("#displayproducts");
 function displayData(data) {
   display.innerHTML = null;
-  console.log(displayNumber);
   for (let i = displayNumber; i < displayNumber + 30; i++) {
     let div = document.createElement("div");
     let img = document.createElement("img");
@@ -152,7 +151,7 @@ function productView(clickedData) {
     id: clickedData.id,
     description: clickedData.description,
   };
-  console.log(obj)
+
   localStorage.setItem("productView", JSON.stringify(obj));
-  window.location.href="productView.html"
+  window.location.href = "productView.html";
 }
