@@ -92,7 +92,7 @@ function signedin() {
   logout.addEventListener("click", function () {
     signinData = null;
     localStorage.setItem("signindata", JSON.stringify(signinData));
-    window.location.href="homepage.html"
+    window.location.href = "index.html";
     signin();
   });
 }

@@ -14,7 +14,7 @@ function displayBasketProduct(basketData) {
     let imgandProductdiv = document.createElement("div"); //...............innerdiv1
     let pricediv = document.createElement("div"); //.......................innerdiv2
     let producttprice = document.createElement("h4");
-    producttprice.innerText = element.price * element.quantity;
+    producttprice.innerText = "$" + element.price * element.quantity;
     //
     let productdetaildiv = document.createElement("div"); //................divfor Product detals
     let img = document.createElement("img");
@@ -62,7 +62,7 @@ function displayBasketProduct(basketData) {
     "Get it shipped (" + totalitems + ")";
   // total price of all item in basketcheckout
   document.querySelector("#Mertotalprice").innerText =
-    Math.round(totalprice * 100) / 100;
+    "$" + Math.round(totalprice * 100) / 100;
   // estimated price/checkout price
   if (totalprice > 50) {
     shippingcharge = 0;
@@ -74,7 +74,7 @@ function displayBasketProduct(basketData) {
     document.querySelector("#shippingandtotalprice").innerText = 0;
   } else {
     document.querySelector("#shippingandtotalprice").innerText =
-      Math.round((totalprice - discprice + shippingcharge) * 100) / 100;
+      "$" + Math.round((totalprice - discprice + shippingcharge) * 100) / 100;
   }
 }
 displayBasketProduct(basketData);
@@ -101,7 +101,7 @@ function remove(element, index) {
   displayBasketProduct(basketData);
 }
 // promocode
-let promo = document.querySelector("form");
+let promo = document.querySelector("#discountform");
 promo.addEventListener("submit", function (event) {
   event.preventDefault();
   if (promo.promocode.value == "masai") {
