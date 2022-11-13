@@ -43,6 +43,8 @@ createaccountform.addEventListener("submit", function (event) {
   };
   userDetail.push(obj);
   localStorage.setItem("userDetail", JSON.stringify(userDetail));
+  createAccountModal.style.display = "none";
+  alert("Account Created,You can Sign in now")
 });
 
 // .........................signin function
